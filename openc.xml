@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<manifest>
+<include name="flame-kk.xml"/>
+
+<remove-project name="codeaurora_kernel_msm"/>
+<remove-project name="device-flame"/>
+
+<remote fetch="https://github.com/VegnuxMod/" name="vegnuxmod"/>
+
+<project name="device-openc" path="device/qcom/openc" remote="vegnuxmod" revision="v2.2"/>
+<project name="kernel-msm8610" path="kernel" remote="vegnuxmod" revision="b2g_kk_3.5"/>
+
+</manifest>
