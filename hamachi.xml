@@ -24,13 +24,14 @@
   <project path="gaia" name="gaia.git" remote="mozillaorg" revision="v2.2" />
   <project path="gecko" name="gecko.git" remote="mozillaorg" revision="v2.2" />
   <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="v2.2" />
+  <project path="rilproxy" name="rilproxy" remote="b2g" revision="master" />
   <project path="librecovery" name="librecovery" remote="b2g" revision="v2.2" />
   <project path="external/moztt" name="moztt" remote="b2g" revision="v2.2" />
   <project path="external/apitrace" name="apitrace" remote="apitrace" revision="master" />
 
   <!-- Stock Android things -->
   <project path="abi/cpp" name="platform/abi/cpp" />
-  <project path="bionic" name="platform/bionic" remote="b2g" revision="b2g_ics_strawberry"/>
+  <project path="bionic" name="platform/bionic" />
   <project path="bootable/recovery" name="platform/bootable/recovery" revision="b2g_ics_1.2" />
   <project path="development" name="platform/development" revision="b2g_ics_1.2" />
   <project path="device/common" name="device/common" />
