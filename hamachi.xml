@@ -18,8 +18,8 @@
   <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="4e87ee8f630b8c94916291406ce07a0de13641a7"/>
   <project name="rilproxy" path="rilproxy" remote="b2g" revision="5ef30994f4778b4052e58a4383dbe7890048c87e"/>
   <project name="librecovery" path="librecovery" remote="b2g" revision="891e5069c0ad330d8191bf8c7b879c814258c89f"/>
-  <project name="moztt" path="moztt" remote="b2g" revision="fe893bb760a3bb64375f62fdf4762a58c59df9ef"/>
-  <project name="apitrace" path="apitrace" remote="apitrace" revision="05baa465f008e92cdf4db74d62f1e3885e3ee73d"/>
+  <project name="moztt" path="external/moztt" remote="b2g" revision="fe893bb760a3bb64375f62fdf4762a58c59df9ef"/>
+  <project name="apitrace" path="external/apitrace" remote="apitrace" revision="05baa465f008e92cdf4db74d62f1e3885e3ee73d"/>
 
   <!-- Stock Android things -->
   <project name="platform/abi/cpp" path="abi/cpp" revision="6426040f1be4a844082c9769171ce7f5341a5528"/>
@@ -28,60 +28,60 @@
   <project name="platform/development" path="development" revision="2460485184bc8535440bb63876d4e63ec1b4770c"/>
   <project name="device/common" path="device/common" revision="0dcc1e03659db33b77392529466f9eb685cdd3c7"/>
   <project name="device/sample" path="device/sample" revision="68b1cb978a20806176123b959cb05d4fa8adaea4"/>
-  <project name="platform_external_apriori" path="apriori" remote="b2g" revision="11816ad0406744f963537b23d68ed9c2afb412bd"/>
-  <project name="platform/bluetooth/bluez" path="bluetooth/bluez" revision="4586e7d69d07e96704b506a91d90d5a0b8495afe"/>
-  <project name="platform/bluetooth/glib" path="bluetooth/glib" revision="c6b49241cc1a8950723a5f74f8f4b4f4c3fa970e"/>
-  <project name="platform/bluetooth/hcidump" path="bluetooth/hcidump" revision="05c760f3cca674e868cd35fefbacfb8d67745ce8"/>
-  <project name="platform/bsdiff" path="bsdiff" revision="81872540236d9bb15cccf963d05b9de48baa5375"/>
-  <project name="platform/bzip2" path="bzip2" revision="048dacdca43eed1534689ececcf2781c63e1e4ba"/>
-  <project name="platform/dbus" path="dbus" revision="878ed6cf21207e36956253a9013932c819053ee4"/>
-  <project name="platform/dhcpcd" path="dhcpcd" revision="638e6ed58cb734c178f1dfb251d3769e1b8ef410"/>
-  <project name="platform/dnsmasq" path="dnsmasq" revision="f621afad94df46204c25fc2593a19d704d2637f5"/>
-  <project name="platform_external_elfcopy" path="elfcopy" remote="b2g" revision="62c1bed1c4505369cac2e72fbe30452a598fb690"/>
-  <project name="platform_external_elfutils" path="elfutils" remote="b2g" revision="72940dec691fa3255e13df01f8c53b620e446066"/>
-  <project name="platform/e2fsprogs" path="e2fsprogs" revision="d5f550bb2f556c5d287f7c8d2b77223654bcec37"/>
-  <project name="platform/expat" path="expat" revision="6df134250feab71edb5915ecaa6268210bca76c5"/>
-  <project name="platform/fdlibm" path="fdlibm" revision="988ffeb12a6e044ae3504838ef1fee3fe0716934"/>
-  <project name="platform/flac" path="flac" revision="5893fbe890f5dab8e4146d2baa4bd2691c0739e0"/>
-  <project name="platform/freetype" path="freetype" revision="aeb407daf3711a10a27f3bc2223c5eb05158076e"/>
-  <project name="platform/giflib" path="giflib" revision="b2597268aef084202a8c349d1cc072c03c6e22eb"/>
-  <project name="platform/gtest" path="gtest" revision="8c212ebe53bb2baab3575f03069016f1fb11e449"/>
-  <project name="platform/harfbuzz" path="harfbuzz" revision="116610d63a859521dacf00fb6818ee9ab2e666f6"/>
-  <project name="platform/icu4c" path="icu4c" revision="0fa67b93b831c6636ca18b152a1b1b14cc99b034"/>
-  <project name="platform/iptables" path="iptables" revision="3b2deb17f065c5664bb25e1a28489e5792eb63ff"/>
-  <project name="platform/jpeg" path="jpeg" revision="28b80b90211be64d388c75e88a256c4ee5dc7b6d"/>
-  <project name="platform/libgsm" path="libgsm" revision="5e4516958690b9a1b2c98f88eeecba3edd2dbda4"/>
-  <project name="platform/liblzf" path="liblzf" revision="6946aa575b0949d045722794850896099d937cbb"/>
-  <project name="platform/libnfc-nxp" path="libnfc-nxp" revision="3a912b065a31a72c63ad56ac224cfeaa933423b6"/>
-  <project name="platform/libnl-headers" path="libnl-headers" revision="6ccf7349d61f73ac26a0675d735d903ab919c658"/>
-  <project name="platform/libpng" path="libpng" revision="970ce2eabb4b5307286002f8cf3823fb88284a43"/>
-  <project name="platform/libvpx" path="libvpx" revision="2618c324e2ecd1fa5dbfb8cc0ba0911f4fd255d9"/>
-  <project name="platform/llvm" path="llvm" revision="d9527968ba7078ee6ce99dda8d8f555342032b91"/>
-  <project name="platform/mksh" path="mksh" revision="8380dd0a75783fc5e4a3e3b0f07f7e25bade3c8c"/>
-  <project name="platform/openssl" path="openssl" revision="c63c712a6a20e2c1b6085601c2d48e3f3ef32f73"/>
-  <project name="platform/protobuf" path="protobuf" revision="e217977611c52bccde7f7c78e1d3c790c6357431"/>
-  <project name="platform/safe-iop" path="safe-iop" revision="07073634e2e3aa4f518e36ed5dec3aabc549d5fb"/>
-  <project name="screencap-gonk" path="screencap-gonk" remote="b2g" revision="e6403c71e9eca8cb943739d5a0a192deac60fc51"/>
-  <project name="platform/skia" path="skia" revision="bf4d9daa768ef8306240b59addb5f0cbab5e58af"/>
-  <project name="platform/sonivox" path="sonivox" revision="f5f46e68585c690436956f552994910f5e33bef5"/>
-  <project name="platform/speex" path="speex" revision="ebe6230a7f7c69f5a4389f2b09b7b19ef9e94f32"/>
-  <project name="platform/sqlite" path="sqlite" revision="fb30e613139b8836fdc8e81e166cf3a76e5fa17f"/>
-  <project name="platform/stlport" path="stlport" revision="a6734e0645fce81c9610de0488b729207bfa576e"/>
-  <project name="platform/strace" path="strace" revision="c9fd2e5ef7d002e12e7cf2512506c84a9414b0fd"/>
-  <project name="platform/svox" path="svox" revision="02dadb2ae0a5c31b9451ab169f1383dd0ff0948f"/>
-  <project name="platform/tagsoup" path="tagsoup" revision="68c2ec9e0acdb3214b7fb91dbab8c9fab8736817"/>
-  <project name="platform/tinyalsa" path="tinyalsa" revision="b3a40ef1402b782553e1f3798d17e75636f16e3b"/>
-  <project name="platform/tremolo" path="tremolo" revision="25bd78d2392dbdc879ae53382cde9d019f79cf6f"/>
-  <project name="unbootimg" path="unbootimg" remote="b2g" revision="9464623d92eb8668544916dc5a8f4f6337d0bc08"/>
-  <project name="platform/webp" path="webp" revision="88fe2b83c4b9232cd08729556fd0485d6a6a92cd"/>
-  <project name="platform/webrtc" path="webrtc" revision="137024dc8a2e9251a471e20518a9c3ae06f81f23"/>
-  <project name="platform/wpa_supplicant" path="wpa_supplicant" revision="a01d37870bbf9892d43e792e5de0683ca41c5497"/>
-  <project name="platform/hostap" path="hostap" revision="f3c1eaf30c660af2b6d090f59dd1530d7a23f531"/>
-  <project name="platform/zlib" path="zlib" revision="60392bf03a7bdbf4b7867b7e9ec6f4917e687435"/>
-  <project name="platform/yaffs2" path="yaffs2" revision="0afa916204c664b3114429637b63af1321a0aeca"/>
-  <project name="platform/base" path="base" revision="e353565bea6e7c8382219190afefcced4b50b7d0"/>
-  <project name="platform/opt/emoji" path="opt/emoji" revision="a95d8db002770469d72dfaf59ff37ac96db29a87"/>
-  <project name="platform/support" path="support" revision="90ffd236fe7f1e2bec74bd8624284ea017b41e64"/>
+  <project name="platform_external_apriori" path="external/apriori" remote="b2g" revision="11816ad0406744f963537b23d68ed9c2afb412bd"/>
+  <project name="platform/external/bluetooth/bluez" path="external/bluetooth/bluez" revision="4586e7d69d07e96704b506a91d90d5a0b8495afe"/>
+  <project name="platform/external/bluetooth/glib" path="external/bluetooth/glib" revision="c6b49241cc1a8950723a5f74f8f4b4f4c3fa970e"/>
+  <project name="platform/external/bluetooth/hcidump" path="external/bluetooth/hcidump" revision="05c760f3cca674e868cd35fefbacfb8d67745ce8"/>
+  <project name="platform/external/bsdiff" path="external/bsdiff" revision="81872540236d9bb15cccf963d05b9de48baa5375"/>
+  <project name="platform/external/bzip2" path="external/bzip2" revision="048dacdca43eed1534689ececcf2781c63e1e4ba"/>
+  <project name="platform/external/dbus" path="external/dbus" revision="878ed6cf21207e36956253a9013932c819053ee4"/>
+  <project name="platform/external/dhcpcd" path="external/dhcpcd" revision="638e6ed58cb734c178f1dfb251d3769e1b8ef410"/>
+  <project name="platform/external/dnsmasq" path="external/dnsmasq" revision="f621afad94df46204c25fc2593a19d704d2637f5"/>
+  <project name="platform_external_elfcopy" path="external/elfcopy" remote="b2g" revision="62c1bed1c4505369cac2e72fbe30452a598fb690"/>
+  <project name="platform_external_elfutils" path="external/elfutils" remote="b2g" revision="72940dec691fa3255e13df01f8c53b620e446066"/>
+  <project name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="d5f550bb2f556c5d287f7c8d2b77223654bcec37"/>
+  <project name="platform/external/expat" path="external/expat" revision="6df134250feab71edb5915ecaa6268210bca76c5"/>
+  <project name="platform/external/fdlibm" path="external/fdlibm" revision="988ffeb12a6e044ae3504838ef1fee3fe0716934"/>
+  <project name="platform/external/flac" path="external/flac" revision="5893fbe890f5dab8e4146d2baa4bd2691c0739e0"/>
+  <project name="platform/external/freetype" path="external/freetype" revision="aeb407daf3711a10a27f3bc2223c5eb05158076e"/>
+  <project name="platform/external/giflib" path="external/giflib" revision="b2597268aef084202a8c349d1cc072c03c6e22eb"/>
+  <project name="platform/external/gtest" path="external/gtest" revision="8c212ebe53bb2baab3575f03069016f1fb11e449"/>
+  <project name="platform/external/harfbuzz" path="external/harfbuzz" revision="116610d63a859521dacf00fb6818ee9ab2e666f6"/>
+  <project name="platform/external/icu4c" path="external/icu4c" revision="0fa67b93b831c6636ca18b152a1b1b14cc99b034"/>
+  <project name="platform/external/iptables" path="external/iptables" revision="3b2deb17f065c5664bb25e1a28489e5792eb63ff"/>
+  <project name="platform/external/jpeg" path="external/jpeg" revision="28b80b90211be64d388c75e88a256c4ee5dc7b6d"/>
+  <project name="platform/external/libgsm" path="external/libgsm" revision="5e4516958690b9a1b2c98f88eeecba3edd2dbda4"/>
+  <project name="platform/external/liblzf" path="external/liblzf" revision="6946aa575b0949d045722794850896099d937cbb"/>
+  <project name="platform/external/libnfc-nxp" path="external/libnfc-nxp" revision="3a912b065a31a72c63ad56ac224cfeaa933423b6"/>
+  <project name="platform/external/libnl-headers" path="external/libnl-headers" revision="6ccf7349d61f73ac26a0675d735d903ab919c658"/>
+  <project name="platform/external/libpng" path="external/libpng" revision="970ce2eabb4b5307286002f8cf3823fb88284a43"/>
+  <project name="platform/external/libvpx" path="external/libvpx" revision="2618c324e2ecd1fa5dbfb8cc0ba0911f4fd255d9"/>
+  <project name="platform/external/llvm" path="external/llvm" revision="d9527968ba7078ee6ce99dda8d8f555342032b91"/>
+  <project name="platform/external/mksh" path="external/mksh" revision="8380dd0a75783fc5e4a3e3b0f07f7e25bade3c8c"/>
+  <project name="platform/external/openssl" path="external/openssl" revision="c63c712a6a20e2c1b6085601c2d48e3f3ef32f73"/>
+  <project name="platform/external/protobuf" path="external/protobuf" revision="e217977611c52bccde7f7c78e1d3c790c6357431"/>
+  <project name="platform/external/safe-iop" path="external/safe-iop" revision="07073634e2e3aa4f518e36ed5dec3aabc549d5fb"/>
+  <project name="screencap-gonk" path="external/screencap-gonk" remote="b2g" revision="e6403c71e9eca8cb943739d5a0a192deac60fc51"/>
+  <project name="platform/external/skia" path="external/skia" revision="bf4d9daa768ef8306240b59addb5f0cbab5e58af"/>
+  <project name="platform/external/sonivox" path="external/sonivox" revision="f5f46e68585c690436956f552994910f5e33bef5"/>
+  <project name="platform/external/speex" path="external/speex" revision="ebe6230a7f7c69f5a4389f2b09b7b19ef9e94f32"/>
+  <project name="platform/external/sqlite" path="external/sqlite" revision="fb30e613139b8836fdc8e81e166cf3a76e5fa17f"/>
+  <project name="platform/external/stlport" path="external/stlport" revision="a6734e0645fce81c9610de0488b729207bfa576e"/>
+  <project name="platform/external/strace" path="external/strace" revision="c9fd2e5ef7d002e12e7cf2512506c84a9414b0fd"/>
+  <project name="platform/external/svox" path="external/svox" revision="02dadb2ae0a5c31b9451ab169f1383dd0ff0948f"/>
+  <project name="platform/external/tagsoup" path="external/tagsoup" revision="68c2ec9e0acdb3214b7fb91dbab8c9fab8736817"/>
+  <project name="platform/external/tinyalsa" path="external/tinyalsa" revision="b3a40ef1402b782553e1f3798d17e75636f16e3b"/>
+  <project name="platform/external/tremolo" path="external/tremolo" revision="25bd78d2392dbdc879ae53382cde9d019f79cf6f"/>
+  <project name="unbootimg" path="external/unbootimg" remote="b2g" revision="9464623d92eb8668544916dc5a8f4f6337d0bc08"/>
+  <project name="platform/external/webp" path="external/webp" revision="88fe2b83c4b9232cd08729556fd0485d6a6a92cd"/>
+  <project name="platform/external/webrtc" path="external/webrtc" revision="137024dc8a2e9251a471e20518a9c3ae06f81f23"/>
+  <project name="platform/external/wpa_supplicant" path="external/wpa_supplicant" revision="a01d37870bbf9892d43e792e5de0683ca41c5497"/>
+  <project name="platform/external/hostap" path="external/hostap" revision="f3c1eaf30c660af2b6d090f59dd1530d7a23f531"/>
+  <project name="platform/external/zlib" path="external/zlib" revision="60392bf03a7bdbf4b7867b7e9ec6f4917e687435"/>
+  <project name="platform/external/yaffs2" path="external/yaffs2" revision="0afa916204c664b3114429637b63af1321a0aeca"/>
+  <project name="platform/frameworks/base" path="frameworks/base" revision="e353565bea6e7c8382219190afefcced4b50b7d0"/>
+  <project name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji" revision="a95d8db002770469d72dfaf59ff37ac96db29a87"/>
+  <project name="platform/frameworks/support" path="frameworks/support" revision="90ffd236fe7f1e2bec74bd8624284ea017b41e64"/>
   <project name="platform/hardware/libhardware" path="hardware/libhardware" revision="300ccfa39e003383d746d6a404be48c9194b19e1"/>
   <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="f197f55362dea6b9fc338a4f6d89bc009900f41f"/>
   <project name="platform/libcore" path="libcore" revision="6d924abb26a30abb24d98378fac6bdc405f2a398"/>
@@ -97,7 +97,7 @@
 
   <!-- hamachi specific things -->
   <project name="quic/lf/b2g/build" path="device/qcom/b2g_common" revision="ccd8b858242c099cb4bc725daf22896ab4a4b325"/>
-  <project name="quic/lf/b2g/jsmin" path="jsmin" revision="cec896f0affaa0226c02605ad28d42df1bc0e393"/>
+  <project name="quic/lf/b2g/external/jsmin" path="external/jsmin" revision="cec896f0affaa0226c02605ad28d42df1bc0e393"/>
   <project name="device/qcom/common" path="device/qcom/common" revision="f2fca7f19754e0d17719257a09b9ea6dd9f9b0cf"/>
   <project name="platform/vendor/qcom/msm7627a" path="device/qcom/msm7627a" revision="f06bcacc6f13cec895dc5d4c2385c076396194ec"/>
   <project name="android-device-hamachi" path="device/qcom/hamachi" remote="b2g" revision="7a67afcef2846ad7938059111e1d0bc4de9f0445"/>

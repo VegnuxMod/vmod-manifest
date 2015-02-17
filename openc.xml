@@ -29,6 +29,6 @@
 <!-- ZTE Open C stuff-->
 <project name="VegnuxMod/device-openc" path="device/qcom/openc" remote="github" revision="v2.2"/>
 <project name="VegnuxMod/kernel-msm8610" path="kernel" remote="github" revision="b2g_kk_3.5"/>
-<project name="KonstaT/proprietary_vendor_zte" path="qcom/openc" remote="github" revision="b2g_kk_3.5" />
+<project name="KonstaT/proprietary_vendor_zte" path="vendor/zte" remote="github" revision="b2g_kk_3.5" />
 
 </manifest>
